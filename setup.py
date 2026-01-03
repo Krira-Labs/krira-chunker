@@ -12,13 +12,14 @@ with open("README.md", "r", encoding="utf-8", errors="ignore") as f:
 
 setup(
     name="krira-chunker",
-    version="0.2.0",
+    version="0.2.11",
     author="Krira Labs",
     author_email="kriralabs@gmail.com",
     description="Production-grade document chunking library for RAG applications",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kriralabs/krira-chunker",
+    license="MIT",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

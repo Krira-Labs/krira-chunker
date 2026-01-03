@@ -1,0 +1,2 @@
+[console_scripts]
+krira-bench = Krira_Chunker.bench:main
