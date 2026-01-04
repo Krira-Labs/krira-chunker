@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {"text":"{\"text\": \"This is XML item 0 with content\", \"metadata\": {\"tag\": \"item\"}}","length":72}
 {"text":"{\"text\": \"This is XML item 1 with content\", \"metadata\": {\"tag\": \"item\"}}","length":72}
 {"text":"{\"text\": \"This is XML item 2 with content\", \"metadata\": {\"tag\": \"item\"}}","length":72}
@@ -8,3 +9,15 @@
 {"text":"{\"text\": \"This is XML item 7 with content\", \"metadata\": {\"tag\": \"item\"}}","length":72}
 {"text":"{\"text\": \"This is XML item 8 with content\", \"metadata\": {\"tag\": \"item\"}}","length":72}
 {"text":"{\"text\": \"This is XML item 9 with content\", \"metadata\": {\"tag\": \"item\"}}","length":72}
+=======
+{"text":"{\"text\": \"This is XML item 0\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 1\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 2\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 3\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 4\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 5\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 6\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 7\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 8\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+{"text":"{\"text\": \"This is XML item 9\", \"metadata\": {\"tag\": \"item\"}}","length":59}
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f

@@ -1,16 +1,28 @@
 //! Core library for Krira Augment
 //! 
+<<<<<<< HEAD
 //! Implements high-performance parallel file processing with streaming support.
+=======
+//! Implements high-performance parallel file processing.
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 
 use std::fs::File;
 use std::io::{BufWriter, Write};
 
+<<<<<<< HEAD
 use memmap2::MmapOptions;
 use pyo3::prelude::*;
 use pyo3::types::PyDict;
 use rayon::prelude::*;
 use serde::{Deserialize, Serialize};
 use std::sync::mpsc;
+=======
+
+use memmap2::MmapOptions;
+use pyo3::prelude::*;
+use rayon::prelude::*;
+use serde::{Deserialize, Serialize};
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 
 mod cleaning;
 mod chunker;
@@ -21,7 +33,11 @@ use chunker::RustChunker;
 use errors::KriraError;
 
 // =============================================================================
+<<<<<<< HEAD
 // Structs
+=======
+// structs
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 // =============================================================================
 
 #[derive(Serialize, Deserialize)]
@@ -35,12 +51,15 @@ struct ChunkObj {
     length: usize,
 }
 
+<<<<<<< HEAD
 /// Internal chunk data structure for streaming
 struct StreamChunk {
     text: String,
     char_count: usize,
 }
 
+=======
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 // =============================================================================
 // Helper Functions
 // =============================================================================
@@ -70,10 +89,13 @@ fn split_into_chunks(text: &str, target_chunk_size: usize) -> Vec<&str> {
     chunks
 }
 
+<<<<<<< HEAD
 // =============================================================================
 // File-Based Processing (Original)
 // =============================================================================
 
+=======
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 #[pyfunction]
 fn process_file_rust(py: Python, input_path: String, output_path: String, config_json: String) -> PyResult<()> {
     
@@ -85,7 +107,11 @@ fn process_file_rust(py: Python, input_path: String, output_path: String, config
 
     // 2. Prepare Output Writer (Thread-safe via Bounded Channel)
     // Using 128 batches to keep memory low on 8GB RAM systems
+<<<<<<< HEAD
     let (tx, rx) = mpsc::sync_channel::<Vec<ChunkObj>>(128); 
+=======
+    let (tx, rx) = std::sync::mpsc::sync_channel::<Vec<ChunkObj>>(128); 
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 
     // 3. Release GIL for heavy lifting
     py.allow_threads(move || -> Result<(), KriraError> {
@@ -160,6 +186,7 @@ fn process_file_rust(py: Python, input_path: String, output_path: String, config
 }
 
 // =============================================================================
+<<<<<<< HEAD
 // Streaming Mode: ChunkIterator
 // =============================================================================
 
@@ -339,13 +366,18 @@ fn process_stream(
 }
 
 // =============================================================================
+=======
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
 // Python Module
 // =============================================================================
 
 #[pymodule]
 fn _rust(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(process_file_rust, m)?)?;
+<<<<<<< HEAD
     m.add_function(wrap_pyfunction!(process_stream, m)?)?;
     m.add_class::<ChunkIterator>()?;
+=======
+>>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f
     Ok(())
 }
