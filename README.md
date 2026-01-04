@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Krira Augment
 
 **High-Performance Rust Chunking Engine for RAG Pipelines**
@@ -14,7 +14,7 @@ Process gigabytes of text in seconds. **40x faster than LangChain** with **O(1) 
 
 ```bash
 pip install krira-augment
-=======
+
 # Krira Augment ⚡🦀
 
 **The High-Performance Rust Chunking Engine for RAG Pipelines**
