@@ -3,44 +3,7 @@
 
 **High-Performance Rust Chunking Engine for RAG Pipelines**
 
-[![PyPI version](https://badge.fury.io/py/krira-augment.svg)](https://badge.fury.io/py/krira-augment)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Process gigabytes of text in seconds. **40x faster than LangChain** with **O(1) memory usage**.
-
----
-
-## Installation
-
-```bash
-pip install krira-augment
-
-# Krira Augment ⚡🦀
-
-**The High-Performance Rust Chunking Engine for RAG Pipelines**
-
-[![PyPI version](https://badge.fury.io/py/krira-augment.svg)](https://badge.fury.io/py/krira-augment)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Rust](https://img.shields.io/badge/Built_with-Rust-orange)](https://www.rust-lang.org/)
-
-**Krira Augment** is a production-grade Python library backed by a highly optimized Rust core. It is designed to replace slow, memory-intensive preprocessing steps in large-scale Retrieval Augmented Generation (RAG) systems.
-
-It processes gigabytes of raw unstructured data (CSV, PDF, DOCX, JSON, URLs, etc.) into high-quality, clean chunks in seconds—utilizing **zero-copy memory mapping** and **segment-based parallel CPU execution**.
-
----
-
-## 🚀 Performance Benchmarks
-
-Benchmarks run on a standard 8-core machine (M2 Air equivalent).
-
-| Dataset Size | Legacy (LangChain/Pandas) | Krira V2 (Rust Core) | Speedup |
-| :--- | :--- | :--- | :--- |
-| **100 MB** | ~45 sec | **~0.8 sec** | **56x** 🚀 |
-| **1 GB** | ~8.0 min | **~12.0 sec** | **40x** 🚀 |
-| **5.28 GB** | *Crash / OOM* | **~58.0 sec** | **Stable** ✅ |
-| **10 GB+** | *N/A* | **~2.1 min** | **Scalable** ✅ |
-
-> **Note:** Krira uses a segment-based parallel strategy. It divides large files into 32MB chunks to ensure CPU saturation while maintaining a strict, low memory footprint.
 
 ---
 
