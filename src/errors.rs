@@ -14,6 +14,15 @@ pub enum KriraError {
     
     #[error("Processing Error: {0}")]
     ProcessError(String),
+    
+    #[error("File Not Found: {0}")]
+    FileNotFound(String),
+    
+    #[error("Unsupported Format: {0}")]
+    UnsupportedFormat(String),
+    
+    #[error("Streaming Error: {0}")]
+    StreamingError(String),
 }
 
 // Convert Rust errors to Python exceptions
@@ -24,6 +33,9 @@ impl From<KriraError> for PyErr {
             KriraError::ConfigError(e) => pyo3::exceptions::PyValueError::new_err(e),
             KriraError::CsvError(e) => pyo3::exceptions::PyValueError::new_err(e.to_string()),
             KriraError::ProcessError(e) => pyo3::exceptions::PyRuntimeError::new_err(e),
+            KriraError::FileNotFound(e) => pyo3::exceptions::PyFileNotFoundError::new_err(e),
+            KriraError::UnsupportedFormat(e) => pyo3::exceptions::PyValueError::new_err(e),
+            KriraError::StreamingError(e) => pyo3::exceptions::PyRuntimeError::new_err(e),
         }
     }
 }

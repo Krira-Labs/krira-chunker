@@ -1,6 +1,6 @@
 [package]
 name = "krira_augment"
-version = "2.0.7"
+version = "2.1.10"
 edition = "2021"
 authors = ["Krira Labs <contact@kriralabs.com>"]
 description = "Production-grade document chunking library for RAG systems"
