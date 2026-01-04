@@ -1,0 +1,95 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "krira-augment"
+version = "2.0.7"
+description = "Production-grade document chunking library for RAG systems - Rust-powered Python library"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Krira Labs", email = "contact@kriralabs.com" }
+]
+keywords = ["rag", "chunking", "nlp", "document-processing", "ai", "rust", "pyo3"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Rust",
+    "Topic :: Text Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.10"
+
+# Dependencies for the Python wrapper (optional)
+dependencies = []
+
+[project.optional-dependencies]
+# For XLSX support (pure Python fallback)
+xlsx = ["openpyxl>=3.0"]
+# For PDF support
+pdf = ["pdfplumber>=0.10"]
+# For Word documents
+docx = ["python-docx>=0.8"]
+# For fast CSV (Polars)
+csv = ["polars>=0.20"]
+# All optional dependencies
+all = [
+    "openpyxl>=3.0",
+    "pdfplumber>=0.10",
+    "python-docx>=0.8",
+    "polars>=0.20",
+]
+# Development dependencies
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "mypy>=1.0",
+    "ruff>=0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/Krira-Labs/krira-chunker"
+Repository = "https://github.com/Krira-Labs/krira-chunker"
+Documentation = "https://github.com/Krira-Labs/krira-chunker#readme"
+Issues = "https://github.com/Krira-Labs/krira-chunker/issues"
+
+[tool.maturin]
+# Python source directory (for any Python wrapper code)
+python-source = "python"
+# Module name matches the Rust library name
+module-name = "krira_augment._rust"
+# Build for all supported Python versions
+features = ["pyo3/extension-module"]
+# Strip debug symbols in release builds
+strip = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "krira_augment/tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

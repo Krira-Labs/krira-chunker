@@ -1,4 +1,60 @@
-rag-collab
+# Rust build artifacts
+/target/
+Cargo.lock
 
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
 
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Benchmarks
+.benchmarks/
+bench_data/
+*.json
+
+# Build artifacts
+*.whl
+*.tar.gz
+
+# OS files
+.DS_Store
+Thumbs.db
