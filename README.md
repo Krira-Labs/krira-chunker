@@ -2,8 +2,7 @@
 
 **High-Performance Rust Chunking Engine for RAG Pipelines**
 
-[![PyPI version](https://badge.fury.io/py/krira-augment.svg)](https://badge.fury.io/py/krira-augment)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 Process gigabytes of text in seconds. **40x faster than LangChain** with **O(1) memory usage**.
 
@@ -65,7 +64,16 @@ Processing **42.4 million chunks** in **105 seconds** (51.16 MB/s).
 ```
 
 ---
+## Krira-Chunker Architecture
+<img width="2251" height="1624" alt="diagram-export-1-5-2026-10_24_14-PM" src="https://github.com/user-attachments/assets/2247c233-95df-4984-b091-6720bcd45372" />
 
+
+---
+
+## Working of Krira-Chunker
+<img width="1600" height="893" alt="image" src="https://github.com/user-attachments/assets/76ce6157-7e76-423d-9da0-a78d8bf70979" />
+
+---
 ## Complete Example: Local (ChromaDB) - FREE
 
 No API keys required. Runs entirely on your machine.
