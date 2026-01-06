@@ -800,8 +800,6 @@ Get your keys from:
    maturin develop
    ```
 
----
 
-## License
 
-MIT License. (c) 2025 Krira Labs.
+
