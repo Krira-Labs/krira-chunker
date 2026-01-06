@@ -1,4 +1,4 @@
-# Krira Augment
+# Krira Augment Presents Krira Chunker
 
 **High-Performance Rust Chunking Engine for RAG Pipelines**
 
