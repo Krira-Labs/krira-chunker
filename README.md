@@ -47,20 +47,19 @@ Processing **42.4 million chunks** in **105 seconds** (51.16 MB/s).
 
 ```text
 ============================================================
- KRIRA AUGMENT - Processing Complete
+✅ KRIRA AUGMENT - Processing Complete
 ============================================================
- Chunks Created:  42,448,765
- Execution Time:  105.68 seconds
- Throughput:      51.16 MB/s
- Output File:     output.csv
+📊 Chunks Created:  42,448,765
+⏱️  Execution Time:  113.79 seconds
+🚀 Throughput:      47.51 MB/s
+📁 Output File:     output.jsonl
 ============================================================
 
- Preview (Top 3 Chunks):
+📝 Preview (Top 3 Chunks):
 ------------------------------------------------------------
 [1] event_time,event_type,product_id,category_id,category_code,brand,price,user_id,user_session
 [2] 2019-10-01 00:00:00 UTC,view,44600062,2103807459595387724,,shiseido,35.79,541312140,72d76fde-8bb3-4e00-8c23-a032dfed738c
-[3] 2019-10-01 00:00:00 UTC,view,3900821,2053013552326770905,appliances.environment.water_heater,aqua,33.20,554748717,9333dfbd-b87a-4708-9857-6336556b0fcc
-------------------------------------------------------------
+[3] 2019-10-01 00:00:00 UTC,view,3900821,2053013552326770905,appliances.environment.water_heater...
 ```
 
 ---
