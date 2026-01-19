@@ -43,7 +43,7 @@ print(f"Preview: {result.preview_chunks[:3]}")
 
 ## Performance Benchmark
 
-Processing **42.4 million chunks** in **105 seconds** (51.16 MB/s).
+Processing **42.4 million chunks** in **113.79 seconds** (47.51 MB/s).
 
 ```text
 ============================================================
