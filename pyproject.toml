@@ -4,12 +4,12 @@ build-backend = "maturin"
 
 [project]
 name = "krira-augment"
-version = "2.1.11"
+version = "2.1.13"
 description = "Production-grade document chunking library for RAG systems - Rust-powered Python library"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [
-    { name = "Krira Labs", email = "contact@kriralabs.com" }
+    { name = "Krira Labs", email = "hello@kriralabs.com" }
 ]
 keywords = ["rag", "chunking", "nlp", "document-processing", "ai", "rust", "pyo3"]
 classifiers = [

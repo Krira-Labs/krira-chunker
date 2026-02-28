@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {"text":"This is line 0 of the text file with some content for testing.","length":62}
 {"text":"This is line 1 of the text file with some content for testing.","length":62}
 {"text":"This is line 2 of the text file with some content for testing.","length":62}
@@ -19,25 +18,3 @@
 {"text":"This is line 17 of the text file with some content for testing.","length":63}
 {"text":"This is line 18 of the text file with some content for testing.","length":63}
 {"text":"This is line 19 of the text file with some content for testing.","length":63}
-=======
-{"text":"This is line 0 of the text file.","length":32}
-{"text":"This is line 1 of the text file.","length":32}
-{"text":"This is line 2 of the text file.","length":32}
-{"text":"This is line 3 of the text file.","length":32}
-{"text":"This is line 4 of the text file.","length":32}
-{"text":"This is line 5 of the text file.","length":32}
-{"text":"This is line 6 of the text file.","length":32}
-{"text":"This is line 7 of the text file.","length":32}
-{"text":"This is line 8 of the text file.","length":32}
-{"text":"This is line 9 of the text file.","length":32}
-{"text":"This is line 10 of the text file.","length":33}
-{"text":"This is line 11 of the text file.","length":33}
-{"text":"This is line 12 of the text file.","length":33}
-{"text":"This is line 13 of the text file.","length":33}
-{"text":"This is line 14 of the text file.","length":33}
-{"text":"This is line 15 of the text file.","length":33}
-{"text":"This is line 16 of the text file.","length":33}
-{"text":"This is line 17 of the text file.","length":33}
-{"text":"This is line 18 of the text file.","length":33}
-{"text":"This is line 19 of the text file.","length":33}
->>>>>>> c85f1727f4e8aad48e031764a3067eb4374a5a9f

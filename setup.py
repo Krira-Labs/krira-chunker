@@ -11,10 +11,10 @@ with open("README.md", "r", encoding="utf-8", errors="ignore") as f:
         long_description = "Production-grade document chunking library for RAG applications."
 
 setup(
-    name="krira-chunker",
-    version="0.2.11",
+    name="krira-augment",
+    version="2.1.13",
     author="Krira Labs",
-    author_email="kriralabs@gmail.com",
+    author_email="hello@kriralabs.com",
     description="Production-grade document chunking library for RAG applications",
     long_description=long_description,
     long_description_content_type="text/markdown",

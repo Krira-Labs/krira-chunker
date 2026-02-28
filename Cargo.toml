@@ -1,8 +1,8 @@
 [package]
 name = "krira_augment"
-version = "2.1.11"
+version = "2.1.13"
 edition = "2021"
-authors = ["Krira Labs <contact@kriralabs.com>"]
+authors = ["Krira Labs <hello@kriralabs.com>"]
 description = "Production-grade document chunking library for RAG systems"
 license = "MIT"
 readme = "README.md"
